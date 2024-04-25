@@ -16,13 +16,13 @@
             <div style="display: flex; gap: 20px; align-items: center">
                 {% if user.is_authenticated %}
                     <p>Hello, {{ user.username }} </p>
-                    <form id="logout-form" method="post" action="{% url 'accounts:logout_view' %}">
+                    <form id="logout-form" method="post" action="/">
                         {% csrf_token %}
                         <button type="submit" class="btn btn-link">Logout</button>
                     </form>
                 {% else %}
-                    <a href="{% url 'accounts:login_view' %}">Login</a>
-                    <a href="{% url 'accounts:register_view' %}">Register</a>
+                    <a href="/">Login</a>
+                    <a href="/">Register</a>
                 {% endif %}
             </div>
         </div>
