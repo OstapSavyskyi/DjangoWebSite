@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/Users/ostand/Desktop/Django/env/bin/python",
+    "python.autoComplete.extraPaths": ["/Users/ostand/Desktop/Django/my_project"],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_django"]
+}
